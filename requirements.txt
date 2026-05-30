@@ -1,0 +1,6 @@
+echo "flask
+requests
+python-dotenv
+google-genai
+beautifulsoup4
+gunicorn" > requirements.txt
