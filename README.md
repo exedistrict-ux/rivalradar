@@ -8,7 +8,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
-[![Gemini](https://img.shields.io/badge/Gemini_3-flash-preview-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5-flash-lite-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![Bright Data](https://img.shields.io/badge/Bright_Data-FF6B35?style=for-the-badge&logo=data&logoColor=white)](https://brightdata.com)
 [![MCP](https://img.shields.io/badge/MCP-Enabled-8A2BE2?style=for-the-badge&logo=protocols&logoColor=white)](https://modelcontextprotocol.io)
 
@@ -34,7 +34,7 @@ RivalRadar is an **autonomous AI research agent** that works like a human analys
 
 1. **Searches** Google in real-time for competitors, pricing, news, and hiring signals
 2. **Scrapes** actual web pages — pricing pages, news articles, LinkedIn job listings
-3. **Reasons** over collected data using Gemini 3 Flash Preview
+3. **Reasons** over collected data using Gemini 2.5 Flash Lite
 4. **Generates** a structured competitive intelligence report with charts and visuals
 
 All of this happens **live in front of you** — you can watch every search query and page scrape as it happens.
@@ -45,7 +45,7 @@ All of this happens **live in front of you** — you can watch every search quer
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **Autonomous AI Agent** | Gemini 3 Flash Preview decides what to search and scrape — no hardcoded logic |
+| 🤖 **Autonomous AI Agent** | Gemini 2.5 Flash Lite decides what to search and scrape — no hardcoded logic |
 | 🔍 **Live Google Search** | Real-time SERP results via Bright Data API |
 | 🌐 **Deep Web Scraping** | Full page content from pricing pages, news, LinkedIn jobs |
 | ⚡ **Real-time Streaming** | Watch the agent work live via Server-Sent Events |
@@ -108,7 +108,7 @@ The **Model Context Protocol (MCP)** is an open standard introduced by Anthropic
 | Component | Implementation | Description |
 |-----------|---------------|-------------|
 | **MCP Host** | Flask Web Server | The application that orchestrates the AI agent and serves the UI |
-| **MCP Client** | Gemini 3 Flash Preview | The AI model that decides which tools to call and when |
+| **MCP Client** | Gemini 2.5 Flash Lite | The AI model that decides which tools to call and when |
 | **MCP Server** | Bright Data APIs | External data sources exposing SERP and scraping capabilities |
 | **MCP Tools** | `search_web()` & `scrape_page()` | Function declarations registered with Gemini for dynamic tool calling |
 | **MCP Resources** | Search results, scraped HTML, reports | Data returned by tools that the AI reasons over |
@@ -179,7 +179,7 @@ RivalRadar's MCP architecture makes it easy to add:
                         │       │                         │
                         │       ▼                         │
                         │  ┌──────────────────────────┐   │
-                        │  │   Gemini 3 Flash Preview │   │
+                        │  │   Gemini 2.5 Flash Lite  │   │
                         │  │      AI Agent Loop       │   │
                         │  │                          │   │
                         │  │  1. Plan research        │   │
@@ -219,7 +219,7 @@ RivalRadar's MCP architecture makes it easy to add:
 ### AI & Data
 | Technology | Purpose |
 |-----------|---------|
-| **Gemini 3 Flash Preview** | AI reasoning, tool calling, report generation |
+| **Gemini 2.5 Flash Lite** | AI reasoning, tool calling, report generation |
 | **Bright Data SERP API** | Live Google search results in JSON |
 | **Bright Data Scraping Browser** | JavaScript-rendered page scraping |
 
@@ -409,7 +409,7 @@ gunicorn
 
 ## 🙌 Built With Love Using
 
-- [Google Gemini 3 Flash Preview](https://ai.google.dev/) — Fast, efficient AI with native tool calling
+- [Google Gemini 2.5 Flash Lite](https://ai.google.dev/) — Fast, efficient AI with native tool calling
 - [Bright Data](https://brightdata.com/) — Industry-leading web data infrastructure  
 - [Model Context Protocol](https://modelcontextprotocol.io/) — Open standard for AI tool integration
 - [Chart.js](https://www.chartjs.org/) — Beautiful, responsive charts
