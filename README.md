@@ -72,8 +72,8 @@ The **Model Context Protocol (MCP)** is an open standard introduced by Anthropic
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    RIVALRADAR MCP ARCHITECTURE               │
-│                                                              │
+│                    RIVALRADAR MCP ARCHITECTURE              │
+│                                                             │
 │  ┌─────────────┐      ┌─────────────┐      ┌─────────────┐  │
 │  │   MCP Host  │◄────►│  MCP Client │◄────►│  MCP Server │  │
 │  │  (Flask App)│      │  (Gemini    │      │  (Bright    │  │
@@ -81,25 +81,25 @@ The **Model Context Protocol (MCP)** is an open standard introduced by Anthropic
 │  └──────┬──────┘      └──────┬──────┘      └──────┬──────┘  │
 │         │                    │                    │         │
 │         ▼                    ▼                    ▼         │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              MCP TOOLS (Function Declarations)       │   │
-│  │                                                      │   │
-│  │  🔍 search_web(query)                                │   │
-│  │     → Bright Data SERP API → Google Search Results    │   │
-│  │                                                      │   │
-│  │  🌐 scrape_page(url)                                 │   │
-│  │     → Bright Data Scraping Browser → Full Page HTML   │   │
-│  │                                                      │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              MCP RESOURCES (Data Access)             │   │
-│  │                                                      │   │
-│  │  📄 Organic Search Results (title, link, desc)       │   │
-│  │  📄 Scraped Page Content (clean text, truncated)     │   │
-│  │  📄 Competitor Intelligence Report (markdown)        │   │
-│  │                                                      │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │              MCP TOOLS (Function Declarations)      │    │
+│  │                                                     │    │
+│  │  🔍 search_web(query)                               │    │  
+│  │     → Bright Data SERP API → Google Search Results  │    │
+│  │                                                     │    │
+│  │  🌐 scrape_page(url)                                │    │
+│  │     → Bright Data Scraping Browser → Full Page HTML │    │
+│  │                                                     │    │
+│  └─────────────────────────────────────────────────────┘    │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │              MCP RESOURCES (Data Access)            │    │
+│  │                                                     │    │
+│  │  📄 Organic Search Results (title, link, desc)      │    │
+│  │  📄 Scraped Page Content (clean text, truncated)    │    │
+│  │  📄 Competitor Intelligence Report (markdown)       │    │
+│  │                                                     │    │
+│  └─────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -172,29 +172,29 @@ RivalRadar's MCP architecture makes it easy to add:
                         ┌─────────────────────────────────┐
                         │           RIVALRADAR            │
                         │                                 │
-   User Input ────────► │  ┌──────────┐  ┌─────────────┐ │
-  (Company Name)        │  │  Flask   │  │   SSE Live  │ │ ◄──── Browser
-                        │  │  Server  │◄─│   Stream    │ │
-                        │  └────┬─────┘  └─────────────┘ │
-                        │       │                        │
-                        │       ▼                        │
-                        │  ┌──────────────────────────┐  │
-                        │  │   Gemini 2.5 Flash Lite   │  │
-                        │  │      AI Agent Loop        │  │
-                        │  │                           │  │
-                        │  │  1. Plan research         │  │
-                        │  │  2. Call tools            │  │
-                        │  │  3. Analyze results       │  │
-                        │  │  4. Generate report       │  │
-                        │  └──────────┬───────────────┘  │
+   User Input ────────► │  ┌──────────┐  ┌─────────────┐  │
+  (Company Name)        │  │  Flask   │  │   SSE Live  │  │ ◄──── Browser
+                        │  │  Server  │◄─│   Stream    │  │
+                        │  └────┬─────┘  └─────────────┘  │
+                        │       │                         │
+                        │       ▼                         │
+                        │  ┌──────────────────────────┐   │
+                        │  │   Gemini 2.5 Flash Lite  │   │
+                        │  │      AI Agent Loop       │   │
+                        │  │                          │   │
+                        │  │  1. Plan research        │   │
+                        │  │  2. Call tools           │   │
+                        │  │  3. Analyze results      │   │
+                        │  │  4. Generate report      │   │
+                        │  └──────────┬───────────────┘   │
                         │             │                   │
                         │      ┌──────┴──────┐            │
                         │      ▼             ▼            │
-                        │  ┌────────┐  ┌──────────┐      │
-                        │  │ SERP   │  │ Scraping │      │
-                        │  │  API   │  │ Browser  │      │
-                        │  └───┬────┘  └────┬─────┘      │
-                        └──────┼────────────┼────────────┘
+                        │  ┌────────┐  ┌──────────┐       │
+                        │  │ SERP   │  │ Scraping │       │
+                        │  │  API   │  │ Browser  │       │
+                        │  └───┬────┘  └────┬─────┘       │
+                        └──────┼────────────┼─────────────┘
                                │            │
                                ▼            ▼
                           Google        Any Website
