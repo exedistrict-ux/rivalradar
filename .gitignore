@@ -1,0 +1,16 @@
+# Environment Variables (આપણી સિક્રેટ કીઓ માટે)
+.env
+.env.local
+
+# Python Virtual Environment (તારા venv ફોલ્ડર માટે)
+venv/
+.venv/
+env/
+
+# Python Cache (પાયથનની ટેમ્પરરી ફાઇલો)
+__pycache__/
+*.pyc
+
+# OS ટેમ્પરરી ફાઇલો
+.DS_Store
+Thumbs.db
