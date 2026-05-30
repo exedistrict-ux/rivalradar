@@ -138,7 +138,7 @@ def run_agent_stream(company: str):
 
         try:
             response = client.models.generate_content(
-                model="gemini-2.5-flash-lite",
+                model="gemini-3.0-flash-preview",
                 contents=contents,
                 config=config,
             )
