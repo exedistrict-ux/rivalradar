@@ -8,7 +8,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
-[![Gemini](https://img.shields.io/badge/Gemini_2.5-flash-lite-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash_Lite-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![Bright Data](https://img.shields.io/badge/Bright_Data-FF6B35?style=for-the-badge&logo=data&logoColor=white)](https://brightdata.com)
 [![MCP](https://img.shields.io/badge/MCP-Enabled-8A2BE2?style=for-the-badge&logo=protocols&logoColor=white)](https://modelcontextprotocol.io)
 
