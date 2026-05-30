@@ -22,15 +22,9 @@
 
 ## 📸 Screenshots
 
-> *(Add your screenshots here)*
+(<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17ab2ee9-4eec-46ee-92a6-e449ba3bc57a" />
 
-| Agent Activity | Intelligence Report |
-|:-:|:-:|
-| ![activity](screenshots/activity.png) | ![report](screenshots/report.png) |
-
-| Competitor Cards | Charts & Analysis |
-|:-:|:-:|
-| ![cards](screenshots/cards.png) | ![charts](screenshots/charts.png) |
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0394c124-4829-4fa1-a669-56f53b09d316" />
 
 ---
 
